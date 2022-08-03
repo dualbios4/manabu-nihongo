@@ -1,0 +1,167 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-2">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <img src="/meong.gif" width="144" class="position-sticky" style="opacity: 0.5;">
+      <img src="/Hiragana_よ_stroke_order_animation-noborder.gif" width="144" class="position-sticky" style="opacity: 0.5;">
+      <img src="/Hiragana_こ_stroke_order_animation-noborder.gif" width="144" class="position-sticky" style="opacity: 0.5;">
+      <img src="/Hiragana_そ_stroke_order_animation-noborder.gif" width="144" class="position-sticky" style="opacity: 0.5;">
+      <img src="/Hiragana_う_stroke_order_animation-noborder.gif" width="144" class="position-sticky" style="opacity: 0.5;">
+      <h1 class="mt-0"><img src="/Japanese_icon_(for_user_box).svg" width="144" class="position-sticky" style="opacity: 0.6;"><span class="gradient-text">[Nihongo]</span> Manabu</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm wave-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 position-relative">
+          <img src="/Japanese_Hiragana_kyokashotai_A.svg" width="144" class="position-absolute top-0 start-0" style="opacity: 0.15;">
+          <h2 class="h4">Security aware</h2>
+          <p>Get A+ scores on <a href="#">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <img src="/Japanese_Hiragana_kyokashotai_U.svg" width="144" class="position-absolute top-0 start-0" style="opacity: 0.15;">
+          <h2 class="h4">Fast by default ⚡️</h2>
+          <p>Get 100 scores on <a href="#">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <img src="/Japanese_Hiragana_kyokashotai_O.svg" width="144" class="position-absolute top-0 start-0" style="opacity:.15">
+          <h2 class="h4">SEO-ready</h2>
+          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 position-relative">
+          <img src="/Japanese_Hiragana_kyokashotai_I.svg" width="144" class="position-absolute top-0 end-0" style="opacity:.15">
+          <h2 class="h4">Full text search</h2>
+          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <img src="/Japanese_Hiragana_kyokashotai_E.svg" width="144" class="position-absolute top-0 end-0" style="opacity:.15">
+          <h2 class="h4">Page layouts</h2>
+          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <img src="/Japanese_Hiragana_kyokashotai_U.svg" width="144" class="position-absolute top-0 end-0" style="opacity:.15">
+          <h2 class="h4">Dark mode</h2>
+          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="section section-sm position-relative">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="display-5 mb-0">What customers are saying ✨</h2>
+          <p class="lead mt-2 mb-4">Product quality and good support are mentioned most often:</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="shadow-lg mt-3 p-4 bg-primary text-white" style="border-radius:.7rem">
+              <p>
+                <a href="/" class="link-light">"ScreenshotOne.com</a> is our screenshot solution that has powerful and flexible tools, this tool suits our business as the manager is developing what you need exactly, and it was really helpful integrating at your business.
+              </p>
+              <p>The best is we can reach support in minutes!</p>
+              <p>
+                <a href="/" class="link-light">ScreenshotOne.com</a> saves us money &amp; time, and best of all, it brings reliability to our business. We just set up &amp; forgot. It works smoothly."
+              </p>
+              <p class="mb-0">
+                <img src="luvian_cotak.jpg" width="64" class="rounded rounded-pill img-thumbnail">
+                <b class="ms-2">Galih Adi Pratama</b>, <a href="#" class="link-light">会社の実習生です</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="shadow shadow-lg mt-3 p-4 bg-primary text-white" style="border-radius:.7rem">
+              <p>" <a href="/" class="link-light">ScreenshotOne.com</a> saves me hours of manual work every month! </p>
+              <p>The easy-to-use API was implemented in an existing backend within 15 minutes and has since generated hundreds of screenshots without problems.</p>
+              <p>I am a happy customer of <a href="/" class="link-light">ScreenshotOne.com</a> and <a href="#" class="link-light">ToolsForCreators.co</a> wouldn't be what it is without this amazing API!" </p>
+              <br>
+              <p class="mb-0">
+                <img src="jannis_fedoruk_betschki.webp" width="64" class="rounded rounded-pill img-thumbnail">
+                <b class="ms-2">Destiyani Permatasari</b>, <a href="#" class="link-light">会社の実習生です</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="section section-sm position-relative">
+    <img src="/shape.svg" class="position-absolute top-0 start-0" style="opacity:.1;width:40%">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="display-6 mb-0">Frequently asked questions</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Do cached screenshots count against the limitation on the plan?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Only unique screenshots (unique combination of options) are counted that are not cached. However, we use CDN for caching, and if there is a cache miss, we might rerender the screenshot and count it against the monthly quota.</p>
+            </div>
+          </div>
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Will I be notified when I am reaching the monthly screenshot limits?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">You will receive an email when you are at 90% and 100% usage of your monthly quota. Nevertheless, you can disable or enable these notifications if you wish.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 position-relative" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Do you support custom feature development?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes, included in every plan. Email us at <a href="mailto:support@screenshotone.com">support@screenshotone.com</a> on what is missing and we will try to deliver as fast as possible. </p>
+            </div>
+          </div>
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Do you store my credit card details?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">No. Our payment processor, Paddle, handles all subscription management.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Is it easy to cancel my subscription?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes, of course, you can do it anytime you wish. You need to navigate to the "Subscription" page and cancel your plan. You will no longer be charged, and you will be able to take screenshots until the end of the paid monthly limit.</p>
+            </div>
+          </div>
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">What is your refund policy?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">If you're disappointed with your purchase for any reason, email us at <a href="mailto:support@screenshotone.com">support@screenshotone.com</a> within 30 days, and we'll refund you in full, no questions asked. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}

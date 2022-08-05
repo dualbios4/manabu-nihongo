@@ -1,8 +1,8 @@
 [[docs]]
-  name = "Pendahuluan"
+  name = "Introduksi"
   weight = 10
-  identifier = "pendahuluan"
-  url = "/docs/pendahuluan/"
+  identifier = "introduksi"
+  url = "/docs/introduksi/"
 
 [[docs]]
   name = "Help"
@@ -10,11 +10,11 @@
   identifier = "help"
   url = "/docs/help/"
 
-# [[docs]]
-#   name = "Lorem"
-#   weight = 70
-#   identifier = "lorem"
-#   url = "/docs/lorem/"
+[[docs]]
+  name = "Lorem"
+  weight = 70
+  identifier = "lorem"
+  url = "/docs/lorem/"
 
 [[guide]]
   name = "Lorem"
@@ -30,9 +30,16 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
   weight = 10
+  identifier = "quiz"
+  url = "/docs/quiz/hiragana/"
+
+[[main]]
+  name = "Quiz Hiragana"
+  weight = 20
+  identifier = "quiz-hiragana"
+  url = "/docs/quiz/hiragana-quiz/"
+  parent = "quiz"
 
 # [[main]]
 #   name = "Tutorial"
@@ -48,20 +55,48 @@
   name = "Mulai Belajar"
   weight = 30
   identifier = "get-started"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/prologue/introduksi/"
+
+#[[main]]
+#  name = "Introduksi"
+#  weight = 40
+#  identifier = "quick-start"
+#  url = "/docs/prologue/introduksi/"
+#  parent = "get-started"
 
 [[main]]
-  name = "Pendahuluan"
-  weight = 40
-  identifier = "quick-start"
-  url = "/docs/prologue/quick-start/"
+  name = "Tata Bahasa"
+  weight = 50
+  identifier = "tatabahasa"
+  url = "/docs/prologue/introduksi/"
   parent = "get-started"
 
 [[main]]
-  name = "Materi N5"
-  weight = 50
-  identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
+  name = "Kosakata"
+  weight = 60
+  identifier = "kosakata"
+  url = "/docs/prologue/introduksi/"
+  parent = "get-started"
+
+[[main]]
+  name = "Huruf Hiragana"
+  weight = 70
+  identifier = "hiragana"
+  url = "/docs/prologue/introduksi/"
+  parent = "get-started"
+
+[[main]]
+  name = "Huruf Katakana"
+  weight = 80
+  identifier = "katakana"
+  url = "/docs/prologue/introduksi/"
+  parent = "get-started"
+
+[[main]]
+  name = "Huruf Kanji"
+  weight = 90
+  identifier = "kanji"
+  url = "/docs/prologue/introduksi/"
   parent = "get-started"
 
 [[social]]

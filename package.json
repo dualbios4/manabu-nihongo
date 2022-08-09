@@ -67,8 +67,5 @@
   },
   "otherDependencies": {
     "hugo": "0.101.0"
-  },
-  "dependencies": {
-    "quizdown": "^0.5.0"
   }
 }

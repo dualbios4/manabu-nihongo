@@ -1,0 +1,125 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-2">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0"><img src="/Japanese_icon_(for_user_box).svg" width="144" class="position-sticky" style="opacity: 0.6;"><span class="gradient-text">[Nihongo]</span> Manabu <img src="/meong.gif" width="144" class="position-sticky" style="opacity: 0.5;"></h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2 mt-3" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <a class="btn btn-outline-primary btn-lg px-4 mb-2 mt-3" href="#" role="button">
+        <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"></path>
+        </svg>
+        Join our Group
+      </a>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm wave-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 position-relative">
+          <img src="/001.png" width="144" class="position-absolute top-0 start-0" style="opacity: 0.15;">
+          <h2 class="h4">Huruf Hiragana</h2>
+          <p>Huruf yg wajib hafal dalam bahasa jepang yang pertama adalah Hiragana <a href="#">Bisa dilihat disini.</a> Huruf Hiragana digunakan untuk menulis kata yang asli berasal dari jepang.</p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <img src="/002.png" width="144" class="position-absolute top-0 start-0" style="opacity: 0.15;">
+          <h2 class="h4">Huruf Katakana &#x1F202;</h2>
+          <p>Huruf yg wajib hafal dalam bahasa jepang yang kedua adalah Katakana <a href="#">Bisa dilihat disini.</a> Huruf Katakana digunakan untuk menulis kata serapan dari bahasa asing.</p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <img src="/003.png" width="144" class="position-absolute top-0 start-0" style="opacity:.3">
+          <h2 class="h4">Kanji</h2>
+          <p>Selain huruf Hiragana ada huruf Kanji yang digunakan untuk menulis kata yang asli berasal dari Jepang. <a href="#">Bisa dilihat disini.</a></p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 position-relative">
+          <h2 class="h4">Tata Bahasa</h2>
+          <p>Dalam Bahasa Jepang pola tata bahasa berbeda dengan bahasa Indonesia. <a href="#">Untuk memulai belajar Bisa dimulai disini.</a></p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <h2 class="h4">Pemahaman Partikel</h2>
+          <p>Partikel atau yang disebuat Joshi dalam bahasa jepang merupakan suatu kata singkat yang berfungsi untuk mengindikasikan hubungan antar kata dalam suatu pola kalimat dalam bahasa jepang.<a href="#">Bisa dipelajari disini.</a></p>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <h2 class="h4">Kosakata</h2>
+          <p>Kumpulan kosakata bahasa jepang yang sering digunakan dalam kehidupan sehari hari.<a href="#">Bisa dilihat disini.</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section section-sm position-relative">
+    <img src="/Flag-map_of_Japan.svg" class="position-absolute top-0 start-0" style="opacity:.2;width:40%">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="display-6 mb-0">Pertanyaan yang sering diajukan &#x2753;</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Apa arti dari ikeh ikeh kimochi dalam bahasa jepang?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Bagi orang yang senang nonton film jepang &#x1F61B; sering mendengar kaya ini ya. Sebenarnya artinya adalah..<a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Apa arti yamete kudasai dalam bahasa jepang?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Kudasai artinya tolong dan Yemete adalah dari kata kerja やめます [yamemasu], artinya menjadi..<a href="#">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 position-relative" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Bahasa jepang apa kabar?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Menanyakan kabar dalam bahasa jepang kalau diartikan agak aneh dalam bahasa indonesia, おげんきですか？ [ogenkidesuka?] yang artinya apakah sehat. Penjelasannya adalah..<a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Bahasa jepang apa?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Apa adalah suatu kata tanya, Dalam bahasa jepang apa ada 2: なん [nan] dan なに [nani]. Kapan menggunakan なん kapan menggunakan なに..<a href="#">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Translate bahasa jepang ke indonesia yang benar?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Mencoba translate bahasa jepang ke indonesia memang agak sulit seandainya belum belajar tata bahasanya. Bagaimana cara memulai belajar bahasa jepang..<a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="col-lg-8" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 class="h5 mb-2" itemprop="name">Apa arti baka dalam bahasa jepang?</h2>
+            <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Mungkin yang sering nonton anime sering mendengar kata ばか [baka] yang artinya "bodoh" tapi ini sudah termasuk kasar ya, kata apa lagi yang sering ada di anime atau yang biasanya digunakan ngobrol dengan orang yang setara atau teman..<a href="#">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}

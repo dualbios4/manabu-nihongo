@@ -15,19 +15,19 @@ toc: true
 
 ## Salam Dan Ungkapan
 
-Budaya dan cara salam, ungkapan dalam bahasa jepang : [Baca disini →]({{< relref "quick-start" >}})
+Budaya dan cara salam, ungkapan dalam bahasa jepang : [Baca disini →]({{< relref "salam-dan-ungkapan" >}})
 
 ## Cara Memperkenalkan Diri
 
-Memperkenalkan diri sendiri atau disebut 自己紹介 `[ Jikoshokai ]` dalam bahasa jepang. [Baca Disini →]({{< relref "quick-start" >}})
+Memperkenalkan diri sendiri atau disebut 自己紹介 `[ Jikoshokai ]` dalam bahasa jepang. [Baca Disini →]({{< relref "cara-memperkenalkan-diri" >}})
 
 ## Perbedaan Mendasar Bahasa Jepang Dengan Bahasa Indonesia
 
-Pada dasarnya Bahasa Jepang dengan Bahasa Indonesia berbeda dari struktur tata bahasanya [Pelajari Disini →]({{< relref "quick-start" >}})
+Pada dasarnya Bahasa Jepang dengan Bahasa Indonesia berbeda dari struktur tata bahasanya [Pelajari Disini →]({{< relref "perbedaan-bahasa-jepang-indonesia" >}})
 
 ## Struktur Kalimat Dalam Bahasa Jepang
 
-Struktur dan pola kalimat lengkap . [Pelajari Disini →](#)
+Struktur dan pola kalimat lengkap . [Pelajari Disini →]({{< relref "struktur-kalimat-dalam-bahasa-jepang" >}})
 
 ## Mengenal Huruf Dalam Bahasa Jepang
 
@@ -51,4 +51,4 @@ Angka dalam bahasa jepang . [Baca Disini →](#)
 
 ## Help
 
-Ada masalah dalam belajar?. [Klik Disini →]({{< relref "how-to-update" >}})
+Ada masalah dalam belajar?. [Klik Disini →]({{< relref "#" >}})

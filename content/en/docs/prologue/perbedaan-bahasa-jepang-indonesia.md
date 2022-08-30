@@ -63,4 +63,27 @@ Jika dalam bahasa jepang menerangkan suatu kata caranya adalah kebalikan dari ca
   CANTIK(kireina) cewek(onnanohito)
 ## 4. Bentuk-bentuk Kata Benda Kata Sifat dan Kata Kerja
 ### - Bahasa Indonesia
+Dalam bahasa indonesia kata benda dan kata sifat tidak terdapat suatu perubahan jika situasinya berbeda.
+  >*Contohnya:* 
+  >*Untuk ngomong hujan **(KATA BENDA)**, entah kejadiannya sekarang, besok, atau kemarin kata hujan tetap sama saja*
+  >*Untuk ngomong indah **(KATA SIFAT)**, entah kejadiannya sekarang, besok, atau kemarin kata indah tetap sama saja*
+
+Untuk kata kerja dalam bahasa Indonesia ada sedikit perubahan seperti penambahan Prefiks (awalan) dan Sufiks (akhiran).
+  >*Contohnya:* 
+  >*makan **(KATA KERJA)**, ditambahkan me-,di-, dll*
+  >*tidur **(KATA KERJA)**, ditambahkan ber-,-an, dll*
+  >`Penambahan Prefiks (awalan) dan Sufiks (akhiran) menentukan fungsi dan arti kata kerja dalam bahasa indonesia`
 ### - Bahasa Jepang
+Dalam bahasa jepang kata benda, kata sifat, dan kata kerja ada berbagai perubahan tergantung dengan situasi dan kondisinya. Beberapa faktor yang mempengaruhi perubahan dalam kata benda, kata sifat, kata kerja seperti waktu, ngomong sopan-tidak sopan, bentuk positif dan negatif.
+  >*Contohnya:* 
+  >*makan **(KATA KERJA)**, taberu* `ngomong tidak sopan`
+  >*makan **(KATA KERJA)**, tabemasu* `ngomong sopan`
+  >*kemarin makan **(KATA KERJA)**, kinou tabemashita* `dipengaruhi waktu`
+  >
+  >*hujan **(KATA BENDA)**, ameda* `ngomong tidak sopan`
+  >*hujan **(KATA BENDA)**, amedesu* `ngomong sopan`
+  >*kemarin hujan **(KATA BENDA)**, kinou amedeshita* `dipengaruhi waktu`
+  >
+  >*sibuk **(KATA SIFAT)**, isogashii* `ngomong tidak sopan`
+  >*sibuk **(KATA SIFAT)**, isogashiidesu* `ngomong sopan`
+  >*kemarin sibuk **(KATA SIFAT)**, kinou isogashikattadesu* `dipengaruhi waktu`

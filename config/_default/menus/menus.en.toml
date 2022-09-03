@@ -34,11 +34,18 @@
   identifier = "quiz"
   url = "/docs/quiz/hiragana/"
 
+# [[main]]
+#  name = "Quiz Hiragana"
+#  weight = 20
+#  identifier = "quiz-hiragana"
+#  url = "/docs/quiz/hiragana-quiz/"
+#  parent = "quiz"
+
 [[main]]
-  name = "Quiz Hiragana"
+  name = "Quiz Kana"
   weight = 20
-  identifier = "quiz-hiragana"
-  url = "/docs/quiz/hiragana-quiz/"
+  identifier = "kana"
+  url = "https://kana.pages.dev/"
   parent = "quiz"
 
 # [[main]]
